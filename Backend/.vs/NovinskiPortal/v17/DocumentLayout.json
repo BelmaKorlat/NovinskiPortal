@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\services\\jwtservice\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\services\\jwtservice\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\services\\passwordservice\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\services\\passwordservice\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\dtos\\authentication\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\dtos\\authentication\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\dtos\\authentication\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\dtos\\authentication\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\services\\passwordservice\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\services\\passwordservice\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\dtos\\dashboard\\gettotalcountsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\dtos\\dashboard\\gettotalcountsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|c:\\users\\belma\\desktop\\novinski_portal\\backend\\novinskiportal.api\\services\\jwtservice\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82AEFDFC-5750-45D9-831A-D05FC92852AA}|NovinskiPortal.API\\NovinskiPortal.API.csproj|solutionrelative:novinskiportal.api\\services\\jwtservice\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T18:41:34.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetTotalCountsResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Dashboard\\GetTotalCountsResponseDto.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\DTOs\\Dashboard\\GetTotalCountsResponseDto.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Dashboard\\GetTotalCountsResponseDto.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\DTOs\\Dashboard\\GetTotalCountsResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:44:58.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Models\\User.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:38:04.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Program.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Program.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Program.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAG0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:31:34.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DatabaseContext.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:29:12.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\PasswordService\\PasswordService.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Services\\PasswordService\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\PasswordService\\PasswordService.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Services\\PasswordService\\PasswordService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAEwDIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:29:12.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\PasswordService\\IPasswordService.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Services\\PasswordService\\IPasswordService.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\PasswordService\\IPasswordService.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Services\\PasswordService\\IPasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:29:11.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\JwtService\\JwtService.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Services\\JwtService\\JwtService.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\JwtService\\JwtService.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Services\\JwtService\\JwtService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:29:08.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\JwtService\\IJwtService.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Services\\JwtService\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Services\\JwtService\\IJwtService.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Services\\JwtService\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:29:08.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Mapping\\UserProfile.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Mapping\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Mapping\\UserProfile.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Mapping\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:28:59.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:28:30.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswD0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:28:02.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\DTOs\\Authentication\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:27:51.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\DTOs\\Authentication\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:27:50.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "NovinskiPortal.API\\Controllers\\ArticlesController.cs",
+              "ToolTip": "C:\\Users\\belma\\Desktop\\Novinski_portal\\Backend\\NovinskiPortal.API\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "NovinskiPortal.API\\Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAEwHQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T00:22:50.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

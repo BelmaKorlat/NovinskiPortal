@@ -1,0 +1,14 @@
+@import "flatpickr/dist/flatpickr.css";
+
+.NgxEditor {
+    height: 175px !important;
+    overflow-y: scroll;
+}
+
+.NgxEditor__Content {
+    min-height: 175px !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

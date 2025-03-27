@@ -1,0 +1,121 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Članci</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashbiard">Početna</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Članci</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="col-auto"><a routerLink="/admin/articles/create" class="btn btn-primary btn-lg mb-2 float-end">Novi
+          Članak</a>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="query" class="form-label">Naziv:</label>
+          <input id="query" class="form-control" [(ngModel)]="query" type="text" placeholder="Unesite naziv..." />
+        </div>
+        <div class="col-md-3">
+          <label for="categoryFilter" class="form-label">Kategorija:</label>
+          <select id="categoryFilter" class="form-select cursor-pointer" [(ngModel)]="selectedCategoryId">
+            <option value="">Sve kategorije</option>
+            <option *ngFor="let cat of categories" [value]="cat.id">{{ cat.name }}</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="subcategoryFilter" class="form-label">Potkategorija:</label>
+          <select id="subcategoryFilter" class="form-select cursor-pointer" [(ngModel)]="selectedSubcategoryId">
+            <option value="">Sve potkategorije</option>
+            <option *ngFor="let sub of subcategories" [value]="sub.id">{{ sub.name }}</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="userFilter" class="form-label">Autor:</label>
+          <select id="userFilter" class="form-select cursor-pointer" [(ngModel)]="selectedUserId">
+            <option value="">Svi autori</option>
+            <option *ngFor="let usr of users" [value]="usr.id">{{ usr.fullName }}</option>
+          </select>
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-primary mt-4" (click)="loadArticles(1)">Traži</button>
+        </div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Kategorija</th>
+            <th>Potkategorija</th>
+            <th>Naslov</th>
+            <th>Datum i vrijeme objave</th>
+            <th>Datum i vrijeme kreiranja</th>
+            <th width="8%">Autor</th>
+            <th class="text-center" width="2%">Udarna?</th>
+            <th class="text-center" width="2%">Uživo?</th>
+            <th class="text-center" width="2%">Aktivan?</th>
+            <th class="text-center" width="8%">Akcije</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let art of articles" class="align-middle">
+            <td>{{ art.category}}</td>
+            <td>{{ art.subcategory }}</td>
+            <td>{{ art.headline }}</td>
+            <td>{{ art.publishedAt | date: 'dd.MM.yyyy HH:MM' }}</td>
+            <td>{{ art.createdAt | date: 'dd.MM.yyyy HH:MM' }}</td>
+            <td>{{ art.user }}</td>
+            <td class="text-center">
+              <span *ngIf="art.breakingNews" class="badge text-bg-success">DA</span>
+              <span *ngIf="!art.breakingNews" class="badge text-bg-danger">NE</span>
+            </td>
+            <td class="text-center">
+              <span *ngIf="art.live" class="badge text-bg-success">DA</span>
+              <span *ngIf="!art.live" class="badge text-bg-danger">NE</span>
+            </td>
+            <td class="text-center">
+              <span *ngIf="art.active" class="badge text-bg-success">DA</span>
+              <span *ngIf="!art.active" class="badge text-bg-danger">NE</span>
+            </td>
+            <td class="text-center">
+              <button [routerLink]="['/admin/articles/update', art.id]" class="btn btn-sm btn-primary me-1"><i
+                  class="fa-solid fa-pen-to-square"></i></button>
+              <button *ngIf="art.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(art)">
+                <i class="fa-solid fa-toggle-off"></i>
+              </button>
+              <button *ngIf="!art.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(art)">
+                <i class="fa-solid fa-toggle-on"></i>
+              </button>
+              <button class="btn btn-sm btn-danger" (click)="deleteCategory(art)"><i
+                  class="fa-solid fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer clearfix">
+      <ul class="pagination pagination-sm m-0 float-end">
+        <li class="page-item" [class.disabled]="currentPage === 1">
+          <a class="page-link cursor-pointer" (click)="goToPage(currentPage - 1)">«</a>
+        </li>
+
+        <li class="page-item" *ngFor="let page of getPages()" [class.active]="page === currentPage">
+          <a class="page-link cursor-pointer" (click)="goToPage(page)">{{ page }}</a>
+        </li>
+
+        <li class="page-item" [class.disabled]="currentPage === totalPages">
+          <a class="page-link cursor-pointer" (click)="goToPage(currentPage + 1)">»</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+<div class="about-area">
+    <div class="container" *ngIf="article">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="trending-tittle pb-0">
+                    <strong class="ps-2 pe-2" [ngStyle]="{'background': article.color}">{{ article.subheadline
+                        }}</strong>
+                    <div class="ps-3 pt-2">{{article.category}} <span *ngIf="article.subcategory">/
+                            {{article.subcategory}}</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="about-right">
+                    <div class="section-tittle pt-30 pt-1">
+                        <h2 class="font-weight-bold">
+                            <span *ngIf="article.live" class="text-danger">Uživo / </span>
+                            <span *ngIf="article.breakingNews" class="text-danger">Udarna vijest / </span>
+                            {{ article.headline }}
+                        </h2>
+                        <div class="about-prea row">
+                            <p class="about-pera1">Autor: {{ article.user }}<span class="float-end">Objavljeno: {{
+                                    article.publishedAt | date: 'dd.MM.yyyy HH:MM' }}</span></p>
+                        </div>
+
+                    </div>
+                    <div class="about-img mb-2">
+                        <img [src]="article.mainPhotoPath" alt="">
+                    </div>
+
+                    <div class="about-prea">
+                        <p class="about-pera1 mb-25"><strong>{{ article.shortText }}</strong></p>
+                        <p class="about-pera1 mb-25" [innerHTML]="article.text"></p>
+                    </div>
+                    <div class="mb-20" *ngIf="gallery">
+                        <h4>Galerija:</h4>
+                        <ng-image-slider [images]="gallery"></ng-image-slider>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="section-tittle mb-40">
+                    <h3>Zapratite nas</h3>
+                </div>
+                <div class="single-follow mb-45">
+                    <div class="single-box">
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/public/img/news/icon-fb.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>pratilaca</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/public/img/news/icon-tw.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>pratilaca</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/public/img/news/icon-ins.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>pratilaca</p>
+                            </div>
+                        </div>
+                        <div class="follow-us d-flex align-items-center">
+                            <div class="follow-social">
+                                <a href="#"><img src="assets/public/img/news/icon-yo.png" alt=""></a>
+                            </div>
+                            <div class="follow-count">
+                                <span>8,045</span>
+                                <p>pratilaca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-poster d-none d-lg-block">
+                    <img src="assets/public/img/news/news_card.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

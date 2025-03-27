@@ -1,0 +1,71 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Nova Kategorija</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Početna</a></li>
+          <li class="breadcrumb-item"><a routerLink="/admin/categories">Kategorije</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nova
+            Kategorija
+          <li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-primary card-outline mb-4">
+    <!-- Header -->
+    <div class="card-header">
+      <div class="card-title">Unesite podatke</div>
+    </div>
+    <!-- Forma -->
+    <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+      <div class="card-body">
+        <!-- Redni broj -->
+        <div class="mb-3">
+          <label for="ordinalNumber" class="form-label">Redni broj</label>
+          <input type="number" formControlName="ordinalNumber" class="form-control" id="ordinalNumber"
+            placeholder="Unesite redni broj" />
+          <div *ngIf="categoryForm.get('ordinalNumber')?.invalid && categoryForm.get('ordinalNumber')?.touched"
+            class="text-danger">
+            Redni broj je obavezan.
+          </div>
+        </div>
+        <!-- Naziv -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Naziv</label>
+          <input type="text" formControlName="name" class="form-control" id="name"
+            placeholder="Unesite naziv kategorije" />
+          <div *ngIf="categoryForm.get('name')?.invalid && categoryForm.get('name')?.touched" class="text-danger">
+            Naziv je obavezan.
+          </div>
+        </div>
+        <!-- Boja -->
+        <div class="mb-3">
+          <label for="color" class="form-label">Boja</label>
+          <input type="color" formControlName="color" class="form-control form-control-color" id="color" />
+          <div *ngIf="categoryForm.get('color')?.invalid && categoryForm.get('color')?.touched" class="text-danger">
+            Boja je obavezna.
+          </div>
+        </div>
+        <!-- Aktivna? -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" formControlName="active" class="form-check-input" id="active" />
+          <label class="form-check-label" for="active">Aktivna</label>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Sačuvaj</button>
+      </div>
+      <div *ngIf="errorMessage" class="text-danger p-2">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="login-page bg-body-secondary">
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="#"><b>NovinskiPortal</b> Admin</a>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Prijavite se da započnete svoju sesiju</p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div class="mb-3">
+  <div class="input-group">
+    <input
+      type="text"
+      formControlName="username"
+      class="form-control"
+      placeholder="Korisničko ime ili email"
+    />
+    <div class="input-group-text">
+      <span class="bi bi-envelope"></span>
+    </div>
+  </div>
+  <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" class="text-danger">
+    Korisničko ime ili email je obavezno.
+  </div>
+</div>
+
+<div class="mb-3">
+  <div class="input-group">
+    <input
+      type="password"
+      formControlName="password"
+      class="form-control"
+      placeholder="Lozinka"
+    />
+    <div class="input-group-text">
+      <span class="bi bi-lock-fill"></span>
+    </div>
+  </div>
+  <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-danger">
+    Lozinka je obavezna.
+  </div>
+</div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="d-grid gap-2">
+                <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">
+                  Prijava
+                </button>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="errorMessage" class="mt-2 text-danger">
+            {{ errorMessage }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

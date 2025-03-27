@@ -1,0 +1,66 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Kategorije</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Početna</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Kategorije</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="card mb-4">
+    <div class="card-body">
+      <a routerLink="/admin/categories/create" class="btn btn-primary btn-lg mb-2 float-end">Nova
+        kategorija</a>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="5%">R.br.</th>
+            <th width="70%">Naziv</th>
+            <th class="text-center" width="5%">Boja</th>
+            <th class="text-center" width="5%">Aktivna?</th>
+            <th class="text-center" width="7%">Akcije</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cat of categories" class="align-middle">
+            <td>{{ cat.ordinalNumber}}</td>
+            <td>{{ cat.name }}</td>
+            <td class="text-center">
+              <span [ngStyle]="{
+                    'display': 'inline-block',
+                    'width': '20px',
+                    'height': '20px',
+                    'background-color': cat.color,
+                    'border-radius': '4px'
+                  }"></span>
+            </td>
+            <td class="text-center">
+              <span *ngIf="cat.active" class="badge text-bg-success"><i class="fas fa-check"></i> DA</span>
+              <span *ngIf="!cat.active" class="badge text-bg-danger"><i class="fas fa-times"></i>NE</span>
+            </td>
+            <td class="text-center">
+              <button [routerLink]="['/admin/categories/update', cat.id]" class="btn btn-sm btn-primary me-1"><i
+                  class="fa-solid fa-pen-to-square"></i></button>
+              <button *ngIf="cat.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(cat)">
+                <i class="fa-solid fa-toggle-off"></i>
+              </button>
+              <button *ngIf="!cat.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(cat)">
+                <i class="fa-solid fa-toggle-on"></i>
+              </button>
+              <button class="btn btn-sm btn-danger" (click)="deleteCategory(cat)"><i
+                  class="fa-solid fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

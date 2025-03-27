@@ -1,0 +1,155 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Novi članak</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Početna</a></li>
+          <li class="breadcrumb-item"><a routerLink="/admin/articles">Članci</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Novi članak</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-8">
+  <div class="card card-primary card-outline mb-4">
+    <!-- Header -->
+    <div class="card-header">
+      <div class="card-title">Unesite podatke</div>
+    </div>
+    <!-- Forma -->
+    <form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+      <div class="card-body">
+        <div class="row mb-2">
+          <!-- Kategorija -->
+          <div class="col-md-6">
+            <label for="category" class="form-label">Kategorija:</label>
+            <select id="category" class="form-select" formControlName="categoryId">
+              <option value="">Odaberite kategoriju</option>
+              <option *ngFor="let cat of categories" [value]="cat.id">{{ cat.name }}</option>
+            </select>
+            <div *ngIf="articleForm.get('categoryId')?.invalid && articleForm.get('categoryId')?.touched"
+              class="text-danger">
+              Odabir kategorije je obavezan.
+            </div>
+          </div>
+          <!-- Potkategorija -->
+          <div class="col-md-6">
+            <label for="subcategory" class="form-label">Potkategorija:</label>
+            <select id="subcategory" class="form-select" formControlName="subcategoryId">
+              <option value="">Odaberite potkategoriju</option>
+              <option *ngFor="let sub of subcategories" [value]="sub.id">{{ sub.name }}</option>
+            </select>
+            <div *ngIf="articleForm.get('subcategoryId')?.invalid && articleForm.get('subcategoryId')?.touched"
+              class="text-danger">
+              Odabir potkategorije je obavezan.
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <!-- Nadnaslov -->
+          <div class="col-md-6">
+            <label for="subheadline" class="form-label">Nadnaslov</label>
+            <input type="text" formControlName="subheadline" class="form-control" id="subheadline"
+              placeholder="Unesite nadnaslov članka" />
+            <div *ngIf="articleForm.get('subheadline')?.invalid && articleForm.get('subheadline')?.touched"
+              class="text-danger">
+              Nadnaslov je obavezan.
+            </div>
+          </div>
+          <!-- Datum i vrijeme objave -->
+          <div class="col-md-6">
+            <label for="publishedAt" class="form-label">Datum i vrijeme objave</label>
+            <input type="datetime" formControlName="publishedAt" class="form-control" id="publishedAt"
+              placeholder="Odaberite datum i vrijeme objave" />
+            <div *ngIf="articleForm.get('publishedAt')?.invalid && articleForm.get('publishedAt')?.touched"
+              class="text-danger">
+              Datum i vrijeme objave su obavezni.
+            </div>
+          </div>
+        </div>
+        <!-- Naslov -->
+        <div class="col-md-12 mb-2">
+          <label for="headline" class="form-label">Naslov</label>
+          <input type="text" formControlName="headline" class="form-control" id="headline"
+            placeholder="Unesite naslov članka" />
+          <div *ngIf="articleForm.get('headline')?.invalid && articleForm.get('headline')?.touched" class="text-danger">
+            Naslov je obavezan.
+          </div>
+        </div>
+        <!-- Kratki text (opis) -->
+        <div class="mb-3">
+          <label for="shortText" class="form-label">Kratki tekst</label>
+          <input type="text" formControlName="shortText" class="form-control" id="shortText"
+            placeholder="Unesite kratki tekst članka" />
+          <div *ngIf="articleForm.get('shortText')?.invalid && articleForm.get('shortText')?.touched"
+            class="text-danger">
+            Kratki tekst je obavezan.
+          </div>
+        </div>
+        <!-- Sadržaj -->
+        <div class="mb-3">
+          <label for="text" class="form-label">Sadržaj</label>
+          <div class="NgxEditor__Wrapper">
+            <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+            <ngx-editor formControlName="text" [editor]="editor" placeholder="Unesite sadržaj..."></ngx-editor>
+          </div>
+          <div *ngIf="articleForm.get('text')?.invalid && articleForm.get('text')?.touched" class="text-danger">
+            Sadržaj je obavezan.
+          </div>
+        </div>
+        <div class="row mb-2 ms-1">
+          <!-- Aktivan? -->
+          <div class="col-auto form-check">
+            <input type="checkbox" formControlName="active" class="form-check-input" id="active" />
+            <label class="form-check-label" for="active">Aktivan</label>
+          </div>
+          <!-- Sakrivanje punog imena? -->
+          <div class="col-auto form-check">
+            <input type="checkbox" formControlName="hideFullName" class="form-check-input" id="hideFullName" />
+            <label class="form-check-label" for="hideFullName">Sakrij puno ime</label>
+          </div>
+          <!-- Udarne vijesti? -->
+          <div class="col-auto form-check">
+            <input type="checkbox" formControlName="breakingNews" class="form-check-input" id="breakingNews" />
+            <label class="form-check-label" for="breakingNews">Udarna vijest</label>
+          </div>
+          <!-- Uživo? -->
+          <div class="col-auto form-check">
+            <input type="checkbox" formControlName="live" class="form-check-input" id="live" />
+            <label class="form-check-label" for="live">Uživo</label>
+          </div>
+        </div>
+        <!-- Glavna slika -->
+        <div class="form-group">
+          <label>Glavna slika</label>
+          <input type="file" class="form-control" accept="image/*" (change)="onMainPhotoChange($event)">
+          <div *ngIf="previewMain" class="mt-2">
+            <img [src]="previewMain" class="img-fluid img-thumbnail" style="max-width: 200px;">
+          </div>
+        </div>
+        <!-- Dodatne slike -->
+        <div class="form-group mt-4">
+          <label>Galerija slika</label>
+          <input type="file" class="form-control" accept="image/*" multiple (change)="onGalleryChange($event)">
+          <div class="row mt-2">
+            <div class="col-md-3" *ngFor="let img of previewGallery">
+              <img [src]="img" class="img-fluid img-thumbnail mb-2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Sačuvaj</button>
+      </div>
+      <div *ngIf="errorMessage" class="text-danger p-2">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Početna</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Početna</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--begin::Col-->
+  <div class="col-lg-3 col-6">
+    <!--begin::Small Box Articles-->
+    <div class="small-box text-bg-primary">
+      <div class="inner">
+        <h3>{{totalCounts.totalArticles}}</h3>
+        <p>Članaka</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-newspaper small-box-icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
+        <path
+          d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
+      </svg>
+      <a routerLink='/admin/articles'
+        class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+        Više <i class="bi bi-link-45deg"></i>
+      </a>
+    </div>
+    <!--end::Small Box Articles-->
+  </div>
+  <!--end::Col-->
+  <div class="col-lg-3 col-6">
+    <!--begin::Small Box Categories-->
+    <div class="small-box text-bg-success">
+      <div class="inner">
+        <h3>{{totalCounts.totalCategories}}</h3>
+        <p>Kategorija</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-card-list small-box-icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+        <path
+          d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+      </svg>
+      <a routerLink='/admin/categories' href="#"
+        class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+        Više <i class="bi bi-link-45deg"></i>
+      </a>
+    </div>
+    <!--end::Small Box Categories-->
+  </div>
+  <div class="col-lg-3 col-6">
+    <!--begin::Small Box Subategories-->
+    <div class="small-box text-bg-success">
+      <div class="inner">
+        <h3>{{totalCounts.totalSubcategories}}</h3>
+        <p>Potkategorija</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list-nested small-box-icon"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
+      </svg>
+      <a routerLink='/admin/subcategories' href="#"
+        class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+        Više <i class="bi bi-link-45deg"></i>
+      </a>
+    </div>
+    <!--end::Small Box Subategories-->
+  </div>
+  <!--end::Col-->
+  <div class="col-lg-3 col-6">
+    <!--begin::Small Box Users-->
+    <div class="small-box text-bg-danger">
+      <div class="inner">
+        <h3>{{totalCounts.totalUsers}}</h3>
+        <p>Korisnika</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people small-box-icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+      </svg>
+      <span class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+        &nbsp;
+      </span>
+    </div>
+    <!--end::Small Box Users-->
+  </div>
+  <!--end::Col-->
+</div>

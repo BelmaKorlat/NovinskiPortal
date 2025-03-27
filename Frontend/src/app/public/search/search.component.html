@@ -1,0 +1,119 @@
+<section class="whats-news-area pt-50 pb-20">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-12 col-md-12">
+            <div class="section-tittle mb-30">
+              <h3>Rezultati pretrage: "{{searchTerm}}"</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="whats-news-caption">
+              <div class="row">
+                <div class="col-lg-6 col-md-6" *ngFor="let article of articles">
+                  <div class="single-what-news mb-100">
+                    <div class="what-img">
+                      <img [src]="article.mainPhotoPath" alt="" />
+                    </div>
+                    <div class="what-cap pt-3">
+                      <span [ngStyle]="{'background': article.color, 'color': 'white'}">
+                        {{ article.subheadline }}
+                      </span>
+                      <h4><a [routerLink]="['/article', article.id]" href="#">
+                          {{ article.headline }}</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="!articles || articles.length === 0">
+                  Nema vijesti.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="section-tittle mb-40">
+          <h3>Zapratite nas</h3>
+        </div>
+        <div class="single-follow mb-45">
+          <div class="single-box">
+            <div class="follow-us d-flex align-items-center">
+              <div class="follow-social">
+                <a href="#"><img src="assets/public/img/news/icon-fb.png" alt=""></a>
+              </div>
+              <div class="follow-count">
+                <span>8,045</span>
+                <p>pratilaca</p>
+              </div>
+            </div>
+            <div class="follow-us d-flex align-items-center">
+              <div class="follow-social">
+                <a href="#"><img src="assets/public/img/news/icon-tw.png" alt=""></a>
+              </div>
+              <div class="follow-count">
+                <span>8,045</span>
+                <p>pratilaca</p>
+              </div>
+            </div>
+            <div class="follow-us d-flex align-items-center">
+              <div class="follow-social">
+                <a href="#"><img src="assets/public/img/news/icon-ins.png" alt=""></a>
+              </div>
+              <div class="follow-count">
+                <span>8,045</span>
+                <p>pratilaca</p>
+              </div>
+            </div>
+            <div class="follow-us d-flex align-items-center">
+              <div class="follow-social">
+                <a href="#"><img src="assets/public/img/news/icon-yo.png" alt=""></a>
+              </div>
+              <div class="follow-count">
+                <span>8,045</span>
+                <p>pratilaca</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-poster d-none d-lg-block">
+          <img src="assets/public/img/news/news_card.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="pagination-area pb-45 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="single-wrap d-flex justify-content-center">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-start">
+              <li class="page-item" [class.disabled]="currentPage === 1">
+                <a class="page-link" (click)="goToPage(currentPage - 1)" aria-label="Previous">
+                  <span class="flaticon-arrow roted"></span>
+                </a>
+              </li>
+
+              <li class="page-item" *ngFor="let page of getPages()" [class.active]="page === currentPage">
+                <a class="page-link" (click)="goToPage(page)">
+                  {{ page < 10 ? ('0' + page) : page }} </a>
+              </li>
+
+              <li class="page-item" [class.disabled]="currentPage === totalPages">
+                <a class="page-link" (click)="goToPage(currentPage + 1)" aria-label="Next">
+                  <span class="flaticon-arrow right-arrow"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="app-content-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 class="mb-0">Potkategorije</h3>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-end">
+          <li class="breadcrumb-item"><a routerLink="/admin/dashboard">Početna</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Potkategorije
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="card mb-4">
+    <div class="card-body">
+
+      <!-- Dropdown i dugme za pretragu -->
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="categoryFilter" class="form-label">Filtriraj po kategoriji:</label>
+          <select id="categoryFilter" class="form-select cursor-pointer" [(ngModel)]="selectedCategoryId">
+            <option value="">Sve kategorije</option>
+            <option *ngFor="let cat of categories" [value]="cat.id">{{ cat.name }}</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="activeFilter" class="form-label">Aktivne:</label>
+          <select id="activeFilter" class="form-select cursor-pointer" [(ngModel)]="selectedActive">
+            <option value="">Sve</option>
+            <option value="true">Aktivne</option>
+            <option value="false">Neaktivne</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary mt-4" (click)="search()">Traži</button>
+        </div>
+        <div class="col-md-4">
+          <a routerLink="/admin/subcategories/create" class="btn btn-primary btn-lg mb-4 float-end">Nova
+            potkategorija</a>
+        </div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="8%">Kategorija</th>
+            <th width="2%" class="text-center">R.br.</th>
+            <th width="49%">Naziv</th>
+            <th class="text-center" width="5%">Aktivna?</th>
+            <th class="text-center" width="7%">Akcije</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let sub of subcategories" class="align-middle">
+            <td>{{ sub.categoryName }}</td>
+            <td class="text-center">{{ sub.ordinalNumber}}</td>
+            <td>{{ sub.name }}</td>
+            <td class="text-center">
+              <span *ngIf="sub.active" class="badge text-bg-success">DA</span>
+              <span *ngIf="!sub.active" class="badge text-bg-danger">NE</span>
+            </td>
+            <td class="text-center">
+              <button [routerLink]="['/admin/subcategories/update', sub.id]" class="btn btn-sm btn-primary me-1"><i
+                  class="fa-solid fa-pen-to-square"></i></button>
+              <button *ngIf="sub.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(sub)">
+                <i class="fa-solid fa-toggle-off"></i>
+              </button>
+              <button *ngIf="!sub.active" class="btn btn-sm btn-secondary me-1" (click)="toggleActive(sub)">
+                <i class="fa-solid fa-toggle-on"></i>
+              </button>
+              <button class="btn btn-sm btn-danger" (click)="deleteSubcategory(sub)"><i
+                  class="fa-solid fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

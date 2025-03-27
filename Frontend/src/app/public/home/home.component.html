@@ -1,0 +1,67 @@
+<div class="trending-area fix">
+  <div class="container">
+    <div class="trending-main mt-30">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="trending-top mb-30" *ngIf="articles && articles.length > 0">
+            <div class="trend-top-img">
+              <img [src]="articles[0].mainPhotoPath" alt="">
+              <div class="trend-top-cap">
+                <span class="mb-0" [ngStyle]="{'background': articles[0].color, 'color': 'white'}">{{
+                  articles[0].category }}</span>
+                <h2 class="pt-2"><a [routerLink]="['/article', articles[0].id]">
+                    <div class="text-danger d-inline-block">
+                      <ng-container *ngIf="articles[0].live">Uživo /&nbsp;</ng-container>
+                      <ng-container *ngIf="articles[0].breakingNews">Udarna vijest /&nbsp;</ng-container>
+                    </div>{{ articles[0].headline }}
+                  </a></h2>
+              </div>
+            </div>
+          </div>
+          <div class="trending-bottom">
+            <div class="row">
+              <div class="col-lg-4" *ngFor="let article of articles | slice:1:4">
+                <div class="single-bottom mb-35">
+                  <div class="trend-bottom-img mb-30">
+                    <img [src]="article.mainPhotoPath" alt="">
+                  </div>
+                  <div class="trend-bottom-cap">
+                    <span [ngStyle]="{'background': article.color, 'color': 'white'}">
+                      {{ article.subheadline }}
+                    </span>
+                    <h4><a [routerLink]="['/article', article.id]" href="#">
+                        <div class="text-danger d-inline-block">
+                          <ng-container *ngIf="article.live">Uživo /&nbsp;</ng-container>
+                          <ng-container *ngIf="article.breakingNews">Udarna vijest /&nbsp;</ng-container>
+                        </div>{{ article.headline }}
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="trand-right-single d-flex" *ngFor="let article of articles |slice:4">
+            <div class="trand-right-img">
+              <img [src]="article.mainPhotoPath" width="150" alt="">
+            </div>
+            <div class="trand-right-cap">
+              <span [ngStyle]="{'background': article.color, 'color': 'white'}">
+                {{ article.subheadline }}
+              </span>
+              <h4><a [routerLink]="['/article', article.id]" href="#">
+                  <div class="text-danger d-inline-block">
+                    <ng-container *ngIf="article.live">Uživo /&nbsp;</ng-container>
+                    <ng-container *ngIf="article.breakingNews">Udarna vijest /&nbsp;</ng-container>
+                  </div>{{ article.headline }}
+                </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
